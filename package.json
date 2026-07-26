@@ -21,13 +21,16 @@
     "test:cli": "node --test tests/cli.test.js",
     "test:all": "node --test tests/e2e.test.js tests/pine_analyze.test.js tests/cli.test.js tests/sanitization.test.js tests/replay.test.js tests/launch.test.js tests/chart_indicator.test.js tests/chart_history.test.js tests/update.test.js",
     "test:verbose": "node --test --test-reporter=spec tests/e2e.test.js tests/pine_analyze.test.js",
-    "test:count": "node --test --test-reporter=spec tests/e2e.test.js 2>&1 | tail -5"
+    "test:count": "node --test --test-reporter=spec tests/e2e.test.js 2>&1 | tail -5",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
     "chrome-remote-interface": "^0.33.2"
   },
   "devDependencies": {
-    "eslint": "^9.39.4"
+    "eslint": "^9.39.4",
+    "wrangler": "^4.114.0"
   }
 }

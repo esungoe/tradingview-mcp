@@ -5,3 +5,10 @@ temp_*
 *.log
 discovery-log.json
 rules.json
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
